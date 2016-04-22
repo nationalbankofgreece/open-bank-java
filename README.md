@@ -6,7 +6,14 @@ More information on the NBG Open Bank API can be found at https://nbgdemo.portal
 
 ## Usage
 
-In order to compile your code using the [Apache HTTP client from HTTP Components](http://hc.apache.org/httpcomponents-client-ga/),  you will need to run the provided `run.sh` script. Open it and use the _"Run file"_ command.
+First, fill in your secondary API key in a file named `.env`. To do so, you could copy and paste the contents of the `.env.example` file - replacing with your key.  
+In order to compile your code using the [Apache HTTP client from HTTP Components](http://hc.apache.org/httpcomponents-client-ga/),  you will need to run the provided `run.sh` script. Open it and use the _"Run file"_ command.  
+The scripts will:
+
+1. Expose the environmental variables defined in `.env` file
+2. Include the `.jar` files inside the `lib` direcotry
+3. Compile all files in the `src/com/sourcelair/bankjava` directory
+4. Run the `main` function inside the `JavaSample.java` file
 
 ### List available banks
 
